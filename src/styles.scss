@@ -1,3 +1,96 @@
+$md-brown-palette: (
+    50 : #ece7e4,
+    100 : #d1c3ba,
+    200 : #b29b8d,
+    300 : #93725f,
+    400 : #7b543c,
+    500 : #64361a,
+    600 : #5c3017,
+    700 : #522913,
+    800 : #48220f,
+    900 : #361608,
+    A100 : #ff926f,
+    A200 : #ff6c3c,
+    A400 : #ff4509,
+    A700 : #ef3a00,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+//GREEN:
+$md-green-palette: (
+    50 : #e5ece1,
+    100 : #becfb4,
+    200 : #92b082,
+    300 : #66904f,
+    400 : #46782a,
+    500 : #256004,
+    600 : #215803,
+    700 : #1b4e03,
+    800 : #164402,
+    900 : #0d3301,
+    A100 : #80ff6b,
+    A200 : #54ff38,
+    A400 : #28ff05,
+    A700 : #21eb00,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+
+
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+// $my-primary: mat.define-palette(mat.$indigo-palette, 500);
+// $my-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+$my-primary: mat.define-palette($md-brown-palette);
+$my-accent: mat.define-palette($md-green-palette);
+
+$my-theme: mat.define-light-theme((
+ color: (
+   primary: $my-primary,
+   accent: $my-accent,
+ ),
+ typography: mat.define-typography-config(),
+ density: 0,
+));
+
+@include mat.all-component-themes($my-theme);
+//@include mat.toolbar-theme($my-theme);
+//@include mat.button-theme($my-theme);
+//@include mat.card-theme($my-theme);
+
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
