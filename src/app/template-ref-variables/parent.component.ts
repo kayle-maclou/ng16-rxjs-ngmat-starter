@@ -1,22 +1,16 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'component-io-parent',
+  selector: 'template-ref-variables-parent',
   template: `
     <p>
       parent component works!
-      <component-io-child 
-        myInputParam="Some-input-value"
-        (myOutputEvent)="onOutputEvent($event)"
-      />
+      <template-ref-variables-child #childComponent />
+      <button (click)="childComponent.someFunction()">Call method in child component!</button>
     </p>
   `,
   styles: [
   ]
 })
 export class TemplateRefVariables_ParentComponent {
-
-  onOutputEvent($event: string) {
-    alert($event)
-  }
 }

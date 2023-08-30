@@ -1,25 +1,19 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
-  selector: 'component-io-child',
+  selector: 'template-ref-variables-child',
   template: `
     <p>
-      child component works with my {{myInputParam}}.
-      <button (click)="clickMe()">Click me!</button>
+      child component works!.
     </p>
   `,
   styles: [
   ]
 })
 export class TemplateRefVariables_ChildComponent {
-  @Input()
-  myInputParam: string = '';
 
-  @Output()
-  myOutputEvent = new EventEmitter<string>();
-
-  clickMe() {
-    this.myOutputEvent.emit('Child was clicked!');
+  someFunction() {
+    alert('Child component method was called!');
   }
 
 }
