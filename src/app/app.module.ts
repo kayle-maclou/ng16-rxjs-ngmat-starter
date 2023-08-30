@@ -10,6 +10,7 @@ import { ComponentIo_ChildComponent } from './component-io/child.component';
 import { TemplateRefVariables_ChildComponent } from './template-ref-variables/child.component';
 import { TemplateRefVariables_ParentComponent } from './template-ref-variables/parent.component';
 import { StructuralDirectives_Component } from './structural-directives/structural-directives';
+import { ClassBinding_Component } from './class-binding/class-binding';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,14 +19,15 @@ import { StructuralDirectives_Component } from './structural-directives/structur
     TemplateRefVariables_ParentComponent,
     TemplateRefVariables_ChildComponent,
     StructuralDirectives_Component,
+    ClassBinding_Component,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
