@@ -9,6 +9,7 @@ import { ComponentIo_ParentComponent } from './component-io/parent.component';
 import { ComponentIo_ChildComponent } from './component-io/child.component';
 import { TemplateRefVariables_ChildComponent } from './template-ref-variables/child.component';
 import { TemplateRefVariables_ParentComponent } from './template-ref-variables/parent.component';
+import { StructuralDirectives_Component } from './structural-directives/structural-directives';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +17,7 @@ import { TemplateRefVariables_ParentComponent } from './template-ref-variables/p
     ComponentIo_ChildComponent,
     TemplateRefVariables_ParentComponent,
     TemplateRefVariables_ChildComponent,
+    StructuralDirectives_Component,
   ],
   imports: [
     BrowserModule,
