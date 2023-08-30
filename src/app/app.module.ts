@@ -11,6 +11,7 @@ import { TemplateRefVariables_ChildComponent } from './template-ref-variables/ch
 import { TemplateRefVariables_ParentComponent } from './template-ref-variables/parent.component';
 import { StructuralDirectives_Component } from './structural-directives/structural-directives';
 import { ClassBinding_Component } from './class-binding/class-binding';
+import { StyleBinding_Component } from './style-binding/class-binding';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +21,7 @@ import { ClassBinding_Component } from './class-binding/class-binding';
     TemplateRefVariables_ChildComponent,
     StructuralDirectives_Component,
     ClassBinding_Component,
+    StyleBinding_Component,
   ],
   imports: [
     BrowserModule,

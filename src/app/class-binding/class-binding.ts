@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
       <div [class.green]="isGreen">This should be green!</div>
 
       <h6>NG-CLASS:</h6>
-      <div [ngClass]="getStyles()">This should be green and bold!</div>
+      <div [ngClass]="getClasses()">This should be green and bold!</div>
     </section>
   `,
   styles: [
@@ -28,7 +28,7 @@ export class ClassBinding_Component {
   isGreen = true;
   isBold = true;
 
-  getStyles() {
+  getClasses() {
     return {
       green: this.isGreen,
       bold: this.isBold,
