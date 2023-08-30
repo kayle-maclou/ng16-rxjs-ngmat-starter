@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'my-domain-root',
+  selector: 'ng16-starter-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

@@ -12,7 +12,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "my-domain",
+      "prefix": "ng16-starter",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
