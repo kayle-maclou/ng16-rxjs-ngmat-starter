@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,7 @@ import { TemplateRefVariables_ParentComponent } from './template-ref-variables/p
 import { StructuralDirectives_Component } from './structural-directives/structural-directives';
 import { ClassBinding_Component } from './class-binding/class-binding';
 import { StyleBinding_Component } from './style-binding/class-binding';
+import { TemplateBasedForm_Component } from './template-based-form/template-based-form';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,11 +24,13 @@ import { StyleBinding_Component } from './style-binding/class-binding';
     StructuralDirectives_Component,
     ClassBinding_Component,
     StyleBinding_Component,
+    TemplateBasedForm_Component,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     MaterialModule,
   ],
   providers: [],
